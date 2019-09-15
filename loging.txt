@@ -1,0 +1,112 @@
+INFO 2019-08-14 09:08:10,314 - created the labels and entries
+INFO 2019-08-14 09:08:10,317 - created the buttons
+INFO 2019-08-14 09:08:10,322 - created the space lables and images 
+INFO 2019-08-14 09:08:10,322 - initial focus set
+INFO 2019-08-14 09:08:10,323 - Bound enter and arrows to root actions
+INFO 2019-08-14 09:08:10,349 - GUI is ready to loop
+INFO 2019-08-14 09:17:47,463 - moves to next entries (on_return_entries
+INFO 2019-08-14 09:17:47,463 - current row of the active entry found (on_return_entries
+INFO 2019-08-14 09:17:47,464 - Quantity and price fields contain info (enter_good)
+INFO 2019-08-14 09:17:47,464 - Checking for name entry  (create_good)
+INFO 2019-08-14 09:17:47,464 - Checking if name exist  (create_good)
+INFO 2019-08-14 09:17:47,465 - Good created and name added to list(create_good)
+INFO 2019-08-14 09:17:47,465 - Entry box .!entry cleaned (create_good)
+INFO 2019-08-14 09:17:47,465 - Entry box .!entry2 cleaned (create_good)
+INFO 2019-08-14 09:17:47,465 - Entry box .!entry3 cleaned (create_good)
+INFO 2019-08-14 09:17:47,466 - Good entered successfully(enter_good)
+INFO 2019-08-14 09:17:47,466 - moved to first entries and entered the goods(*if valid numbers), (on_return_entries)
+INFO 2019-08-14 09:17:56,167 - moves to next entries (on_return_entries
+INFO 2019-08-14 09:17:56,167 - current row of the active entry found (on_return_entries
+INFO 2019-08-14 09:17:56,168 - Quantity and price fields contain info (enter_good)
+INFO 2019-08-14 09:17:56,168 - Checking for name entry  (create_good)
+INFO 2019-08-14 09:17:56,168 - Checking if name exist  (create_good)
+INFO 2019-08-14 09:17:56,168 - Good created and name added to list(create_good)
+INFO 2019-08-14 09:17:56,169 - Entry box .!entry cleaned (create_good)
+INFO 2019-08-14 09:17:56,169 - Entry box .!entry2 cleaned (create_good)
+INFO 2019-08-14 09:17:56,169 - Entry box .!entry3 cleaned (create_good)
+INFO 2019-08-14 09:17:56,169 - Good entered successfully(enter_good)
+INFO 2019-08-14 09:17:56,170 - moved to first entries and entered the goods(*if valid numbers), (on_return_entries)
+INFO 2019-08-14 09:18:12,775 - moves to next entries (on_return_entries
+INFO 2019-08-14 09:18:12,775 - current row of the active entry found (on_return_entries
+INFO 2019-08-14 09:18:12,776 - Quantity and price fields contain info (enter_good)
+INFO 2019-08-14 09:18:12,776 - Checking for name entry  (create_good)
+INFO 2019-08-14 09:18:12,776 - Checking if name exist  (create_good)
+INFO 2019-08-14 09:18:12,777 - Good created and name added to list(create_good)
+INFO 2019-08-14 09:18:12,777 - Entry box .!entry cleaned (create_good)
+INFO 2019-08-14 09:18:12,777 - Entry box .!entry2 cleaned (create_good)
+INFO 2019-08-14 09:18:12,777 - Entry box .!entry3 cleaned (create_good)
+INFO 2019-08-14 09:18:12,778 - Good entered successfully(enter_good)
+INFO 2019-08-14 09:18:12,778 - moved to first entries and entered the goods(*if valid numbers), (on_return_entries)
+INFO 2019-08-14 09:18:27,655 - moves to next entries (on_return_entries
+INFO 2019-08-14 09:18:27,655 - current row of the active entry found (on_return_entries
+INFO 2019-08-14 09:18:27,656 - Quantity and price fields contain info (enter_good)
+INFO 2019-08-14 09:18:31,726 - Quantity over 10000,00
+INFO 2019-08-14 09:18:31,727 - Entry of good failed as the numbers are not valid(enter_good)
+INFO 2019-08-14 09:18:31,727 - moved to first entries and entered the goods(*if valid numbers), (on_return_entries)
+INFO 2019-08-14 09:18:34,246 - moves to next entries (on_return_entries
+INFO 2019-08-14 09:18:34,247 - current row of the active entry found (on_return_entries
+INFO 2019-08-14 09:18:34,247 - moved to next entries (on_return_entries
+INFO 2019-08-14 09:18:38,038 - moves to next entries (on_return_entries
+INFO 2019-08-14 09:18:38,039 - current row of the active entry found (on_return_entries
+INFO 2019-08-14 09:18:38,039 - moved to next entries (on_return_entries
+INFO 2019-08-14 09:18:38,630 - moves to next entries (on_return_entries
+INFO 2019-08-14 09:18:38,631 - current row of the active entry found (on_return_entries
+INFO 2019-08-14 09:18:38,631 - Quantity and price fields contain info (enter_good)
+INFO 2019-08-14 09:18:40,335 - Price over 1000000,00
+INFO 2019-08-14 09:18:40,336 - Entry of good failed as the numbers are not valid(enter_good)
+INFO 2019-08-14 09:18:40,336 - moved to first entries and entered the goods(*if valid numbers), (on_return_entries)
+INFO 2019-08-14 09:18:41,863 - moves to next entries (on_return_entries
+INFO 2019-08-14 09:18:41,864 - current row of the active entry found (on_return_entries
+INFO 2019-08-14 09:18:41,864 - Quantity and price fields contain info (enter_good)
+INFO 2019-08-14 09:18:43,696 - Price over 1000000,00
+INFO 2019-08-14 09:18:43,696 - Entry of good failed as the numbers are not valid(enter_good)
+INFO 2019-08-14 09:18:43,696 - moved to first entries and entered the goods(*if valid numbers), (on_return_entries)
+INFO 2019-08-14 09:18:50,104 - moves to next entries (on_return_entries
+INFO 2019-08-14 09:18:50,104 - current row of the active entry found (on_return_entries
+INFO 2019-08-14 09:18:50,104 - Quantity and price fields contain info (enter_good)
+INFO 2019-08-14 09:18:55,807 - not valid numbers found (check_if_entries_are_numbers)
+INFO 2019-08-14 09:18:55,807 - highlights the incorrect entry(highlight_wrong)
+INFO 2019-08-14 09:18:55,813 - Entry of good failed as the numbers are not valid(enter_good)
+INFO 2019-08-14 09:18:55,813 - moved to first entries and entered the goods(*if valid numbers), (on_return_entries)
+INFO 2019-08-14 09:18:57,494 - fetched coordinates of the event widget (arrow_moves)
+INFO 2019-08-14 09:18:57,495 - moved up  as it is not the bottom row(arrow_moves)
+INFO 2019-08-14 09:18:57,736 - fetched coordinates of the event widget (arrow_moves)
+INFO 2019-08-14 09:18:57,736 - moved up  as it is not the bottom row(arrow_moves)
+INFO 2019-08-14 09:18:59,223 - moves to next entries (on_return_entries
+INFO 2019-08-14 09:18:59,223 - current row of the active entry found (on_return_entries
+INFO 2019-08-14 09:18:59,224 - Quantity and price fields contain info (enter_good)
+INFO 2019-08-14 09:18:59,224 - Checking for name entry  (create_good)
+INFO 2019-08-14 09:18:59,224 - Checking if name exist  (create_good)
+INFO 2019-08-14 09:18:59,225 - Good created and name added to list(create_good)
+INFO 2019-08-14 09:18:59,225 - Entry box .!entry cleaned (create_good)
+INFO 2019-08-14 09:18:59,225 - Entry box .!entry2 cleaned (create_good)
+INFO 2019-08-14 09:18:59,226 - Entry box .!entry3 cleaned (create_good)
+INFO 2019-08-14 09:18:59,226 - Good entered successfully(enter_good)
+INFO 2019-08-14 09:18:59,226 - moved to first entries and entered the goods(*if valid numbers), (on_return_entries)
+INFO 2019-08-14 09:19:12,262 - moves to next entries (on_return_entries
+INFO 2019-08-14 09:19:12,263 - current row of the active entry found (on_return_entries
+INFO 2019-08-14 09:19:12,263 - Quantity and price fields contain info (enter_good)
+INFO 2019-08-14 09:19:12,263 - Checking for name entry  (create_good)
+INFO 2019-08-14 09:19:12,263 - Checking if name exist  (create_good)
+INFO 2019-08-14 09:19:12,264 - Good created and name added to list(create_good)
+INFO 2019-08-14 09:19:12,264 - Entry box .!entry cleaned (create_good)
+INFO 2019-08-14 09:19:12,264 - Entry box .!entry2 cleaned (create_good)
+INFO 2019-08-14 09:19:12,264 - Entry box .!entry3 cleaned (create_good)
+INFO 2019-08-14 09:19:12,264 - Good entered successfully(enter_good)
+INFO 2019-08-14 09:19:12,265 - moved to first entries and entered the goods(*if valid numbers), (on_return_entries)
+INFO 2019-08-14 09:19:24,647 - starting close with button (close_with_button)
+INFO 2019-08-14 09:19:24,647 - Selecting the output file new or existing (write_or_add)
+INFO 2019-08-14 09:19:24,647 - Writing the data to excel before closing with button (write_or_add)
+INFO 2019-08-14 09:19:24,648 - Selecting destination file(select_dest_file)
+INFO 2019-08-14 09:19:40,695 - Selected destination file (select_dest_file) - C:/Users/jmishev/Desktop/inventory1/140819.xlsx  
+INFO 2019-08-14 09:19:40,695 - Destination is selected (write_to_excel)
+INFO 2019-08-14 09:19:40,703 - setting column and headings and patterns (create_file_structure)
+INFO 2019-08-14 09:19:40,704 - Loop for formatting and header names (create_file_structure)
+INFO 2019-08-14 09:19:40,706 - filling formulas (create_file_structure)
+INFO 2019-08-14 09:19:40,707 - Loop for column F (create_file_structure)
+INFO 2019-08-14 09:19:40,709 - Loop for column C (create_file_structure)
+INFO 2019-08-14 09:19:40,716 - Loop for column width (create_file_structure)
+INFO 2019-08-14 09:19:40,716 - Loop goods attribute (create_file_structure)
+INFO 2019-08-14 09:19:40,717 - Saving part of the function (create_file_structure)
+INFO 2019-08-14 09:19:40,797 - Check if file is open 2 (write_to_excel)
+INFO 2019-08-14 09:19:48,136 - Closing program (write_to_excel)
