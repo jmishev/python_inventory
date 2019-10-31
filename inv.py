@@ -7,7 +7,7 @@ from tkinter.filedialog import asksaveasfilename
 from openpyxl import Workbook, utils, load_workbook
 from openpyxl.styles import PatternFill, Font
 
-from inventory.inventory_desktop import MySQL as ms
+import MySQL as ms
 
 labels = {}
 entries = {}

@@ -3,7 +3,7 @@ import os
 import sys
 from tkinter.filedialog import askopenfilename
 
-import inventory.inventory_split.inv as inv
+import inv
 import tkinter as tk
 
 directory = inv.directory

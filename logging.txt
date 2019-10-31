@@ -1,0 +1,6 @@
+INFO 2019-10-31 12:36:37,406 - created the labels and entries
+INFO 2019-10-31 12:36:37,408 - created the buttons
+INFO 2019-10-31 12:36:37,411 - created the space lables and images 
+INFO 2019-10-31 12:36:37,411 - initial focus set
+INFO 2019-10-31 12:36:37,411 - Bound enter and arrows to root actions
+INFO 2019-10-31 12:36:37,455 - GUI is ready to loop
