@@ -1,6 +1,11 @@
-INFO 2019-10-31 12:36:37,406 - created the labels and entries
-INFO 2019-10-31 12:36:37,408 - created the buttons
-INFO 2019-10-31 12:36:37,411 - created the space lables and images 
-INFO 2019-10-31 12:36:37,411 - initial focus set
-INFO 2019-10-31 12:36:37,411 - Bound enter and arrows to root actions
-INFO 2019-10-31 12:36:37,455 - GUI is ready to loop
+INFO 2019-11-13 07:17:09,984 - If no data is on screen and no goods are created exits
+INFO 2019-11-13 07:17:09,985 - Quantity and price fields contain info (enter_good)
+INFO 2019-11-13 07:17:09,985 - Checking for name entry  (create_good)
+INFO 2019-11-13 07:17:09,985 - Checking if name exist  (create_good)
+INFO 2019-11-13 07:17:09,985 - Good created and name added to list(create_good)
+INFO 2019-11-13 07:17:09,986 - Entry box <MagicMock id='1617218803784'> cleaned (create_good)
+INFO 2019-11-13 07:17:09,986 - Entry box <MagicMock id='1617218803784'> cleaned (create_good)
+INFO 2019-11-13 07:17:09,987 - Entry box <MagicMock id='1617218803784'> cleaned (create_good)
+INFO 2019-11-13 07:17:09,987 - Good entered successfully(enter_good)
+INFO 2019-11-13 07:17:09,987 - Exiting data exported to excel(close_with_x)
+INFO 2019-11-13 07:17:09,987 - No onscreen entry but goods in the list (close_with_x)

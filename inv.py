@@ -43,12 +43,13 @@ def close_with_x():
         if check_on_screen() == "Good to be entered":
             enter_good()
             logger.info("Exiting data exported to excel(close_with_x)")
+            write_or_add()
             return "Good entered"
         elif good_list:
             logger.info("No onscreen entry but goods in the list (close_with_x)")
             write_or_add()
             return "Goods in the list entered no onscreen entered (close_with_x)"
-
+    sys.exit()
 
 def write_or_add():
     """Selecting the output file new or existing"""
@@ -212,7 +213,6 @@ def add_quantity():
         # depending on choice accumulate or not the quantity for existing good.
         logger.info("Adding accumulated quantity(add_quantity)")
         if a in good_list:
-                # breakpoint()
                 good_list[a].quantity = float(b) + good_list[a].quantity
                 good_list[a].total_price = good_list[a].quantity * good_list[a].price
                 logger.info(f'checked {a}')
@@ -326,7 +326,6 @@ def create_file_structure():
 
 
 def write_to_excel():
-    breakpoint()
     write_to_mysql()
     """ writes the data in a new file, ir there is existing data it is overwritten"""
     # write_to_database()
@@ -347,6 +346,7 @@ def write_to_excel():
                 FileExistsError
                 messagebox.showinfo(message="Файлът е отворен, затворете го за да запазите операциите ")
                 logger.info("Prompted to close the file 2 (write_to_excel)")
+
 
         else:
             return "Saving canceled"
@@ -371,7 +371,6 @@ def select_dest_file():
 
 
 def add_to_excel():
-    breakpoint()
     write_to_mysql()
     """Adding to excel - keeping old records. """
     # write_to_database()
@@ -404,7 +403,7 @@ def add_to_excel():
         ws["D" + str(n)] = good_list[i].quantity*good_list[i].price
         n += 1
     logger.info(f"added rows and info in a loop starting row {n-1}")
-
+    wb.close()
     try:
         wb.save(file)
         logger.info("Check if file is open 2 (add_to_excel)")
@@ -419,11 +418,13 @@ def add_to_excel():
 
 
 def write_to_mysql():
+    ms.my_cursor.execute("create table if not exists REVISIA ( GOOD varchar(255), QUANTITY float(9,2), PRICE float(9,2), good_total float(18,2))")
     for good in good_list.keys():
          val = (str(good_list[good].name), str(good_list[good].quantity),
                str(good_list[good].price), str(good_list[good].total_price))
          ms.my_cursor.execute(ms.sql_formula, val)
          ms.mydb.commit()
+
     ms.my_cursor.execute("SELECT * FROM inventory.revisia")
     my_result = ms.my_cursor.fetchall()
     for i in my_result:
