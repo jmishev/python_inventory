@@ -7,23 +7,24 @@ from tkinter.filedialog import asksaveasfilename
 from openpyxl import Workbook, utils, load_workbook
 from openpyxl.styles import PatternFill, Font
 
-import MySQL as ms
+# import MySQL as ms
 
 labels = {}
 entries = {}
 buttons = {}
-good_list = {}
+good_dict = {}
 # dictionaries of good objects
 
 root = 'it becomes a root object'
 v = 'it becomes a tkinter variable'
-
 directory = str(os.path.dirname(os.path.abspath(__file__)))
+
 # logger
 format_log = "%(levelname)s %(asctime)s - %(message)s"
 logging.basicConfig(filename=directory + "/logging.txt",
                     level=logging.DEBUG, format=format_log, filemode='w')
 logger = logging.getLogger()
+
 
 class Goods:
     def __init__(self, name, quantity, price):
@@ -35,7 +36,7 @@ class Goods:
 
 def close_with_x():
     """ Closing by closing main window by clicking on 'X' """
-    if not ((entries[(1, 1)].get() and entries[(2, 1)].get()) or good_list):
+    if not ((entries[(1, 1)].get() and entries[(2, 1)].get()) or good_dict):
         # If no data is on screen and no goods are created exits
         logger.info("If no data is on screen and no goods are created exits")
         sys.exit()
@@ -45,17 +46,18 @@ def close_with_x():
             logger.info("Exiting data exported to excel(close_with_x)")
             write_or_add()
             return "Good entered"
-        elif good_list:
+        elif good_dict:
             logger.info("No onscreen entry but goods in the list (close_with_x)")
             write_or_add()
             return "Goods in the list entered no onscreen entered (close_with_x)"
     sys.exit()
 
+
 def write_or_add():
     """Selecting the output file new or existing"""
     logger.info("Selecting the output file new or existing (write_or_add)")
     
-    if  root.title() == "Програма за ревизия":
+    if root.title() == "Програма за ревизия":
         # destination file is not preselected
         logger.info("Writing the data to excel before closing with button (write_or_add)")
         write_to_excel()
@@ -73,11 +75,11 @@ def close_with_button():  # event is given by pushing the button 'Запази �
     """Closing with button 'Запази и излез'"""
     logger.info("starting close with button (close_with_button)")
     x = check_on_screen()
-    if x == "No data" and good_list != {}:  # No data onscreen and no goods entered yet
+    if x == "No data" and good_dict != {}:  # No data onscreen and no goods entered yet
         write_or_add()
         return "Closing with button no onscreen"
         logger.info("Closing with button no onscreen (close_with_button)")
-    elif x == "Saving onscreen rejected" and good_list != {}:
+    elif x == "Saving onscreen rejected" and good_dict != {}:
         # Rejected entering onscreen data and no goods entered yet++
         write_or_add()
         logger.info("Saving onscreen rejected(close_with_button)")
@@ -177,12 +179,12 @@ def create_good():
         logger.info("Checking for name entry  (create_good)")
         # checks if name will be entered
         a = entries[0, 1].get()
-        if a not in good_list.keys():
+        if a not in good_dict.keys():
             logger.info("Checking if name exist  (create_good)")
             key = a
             a = Goods(a, float(entries[1, 1].get().replace(",", ".")),
                       float(entries[(2, 1)].get().replace(",", ".")))
-            good_list[key] = a
+            good_dict[key] = a
             logger.info("Good created and name added to list(create_good)")
             m = f" created {a.name, a.quantity, a.price, a.total_price}"
 
@@ -194,8 +196,8 @@ def create_good():
     else:
         good = Goods("No Name good", float(entries[(1, 1)].get().replace(",", ".")),
                      float(entries[(2, 1)].get().replace(",", ".")))
-        key = (x for x in range(1000000) if x not in good_list)
-        good_list[key] = good
+        key = (x for x in range(1000000) if x not in good_dict)
+        good_dict[key] = good
         logger.info("Good 'No Name good' created and name added to list (create_good)")
         m = f" No name created {good.name, good.quantity, good.price, good.total_price}"
 
@@ -212,11 +214,11 @@ def add_quantity():
     if v.get() == 1:
         # depending on choice accumulate or not the quantity for existing good.
         logger.info("Adding accumulated quantity(add_quantity)")
-        if a in good_list:
-                good_list[a].quantity = float(b) + good_list[a].quantity
-                good_list[a].total_price = good_list[a].quantity * good_list[a].price
+        if a in good_dict:
+                good_dict[a].quantity = float(b) + good_dict[a].quantity
+                good_dict[a].total_price = good_dict[a].quantity * good_dict[a].price
                 logger.info(f'checked {a}')
-        return f"added {good_list[a].name, good_list[a].quantity, good_list[a].price, good_list[a].total_price}"
+        return f"added {good_dict[a].name, good_dict[a].quantity, good_dict[a].price, good_dict[a].total_price}"
 
     else:
         # creating same good but found in a different place as
@@ -225,21 +227,21 @@ def add_quantity():
                     " as non accumulating option is selected(add_quantity)")
         x = 1
         key = a + str(x)
-        while key in good_list:
+        while key in good_dict:
             x +=1
             key = a + str(x)
         a = Goods(a, float(entries[1, 1].get().replace(",", ".")),
                   float(entries[(2, 1)].get().replace(",", ".")))
-        good_list[key] = a
+        good_dict[key] = a
         return f"added {a.name, a.quantity, a.price, a.total_price}"
 
 
 def calculate_total():
     """calculate totals of all goods"""
     product_total = 0
-    for i in good_list.keys():
+    for i in good_dict.keys():
         logger.info(f"checking {i}")
-        product_total += good_list[i].total_price
+        product_total += good_dict[i].total_price
     return product_total
 
 
@@ -314,19 +316,19 @@ def create_file_structure():
         ws.column_dimensions[column].width = adjusted_width
     logger.info("Loop for column width (create_file_structure)")
 
-    for i in range(len(good_list)):
+    for i in range(len(good_dict)):
         n = str(i+4)
-        ws[("A" + str(n))] = good_list[i].name
-        ws[("B" + str(n))] = good_list[i].quantity
-        ws["C" + str(n)] = good_list[i].price
-        ws["D" + str(n)] = good_list[i].quantity*good_list[i].price
+        ws[("A" + str(n))] = good_dict[i].name
+        ws[("B" + str(n))] = good_dict[i].quantity
+        ws["C" + str(n)] = good_dict[i].price
+        ws["D" + str(n)] = good_dict[i].quantity * good_dict[i].price
     logger.info("Loop goods attribute (create_file_structure)")
     logger.info("Saving part of the function (create_file_structure)")
     return wb
 
 
 def write_to_excel():
-    write_to_mysql()
+    # write_to_mysql()
     """ writes the data in a new file, ir there is existing data it is overwritten"""
     # write_to_database()
     
@@ -342,11 +344,9 @@ def write_to_excel():
             try:
                 create_file_structure().save(file)
                 logger.info("Check if file is open 2 (write_to_excel)")
-            except :
-                FileExistsError
+            except FileExistsError:
                 messagebox.showinfo(message="Файлът е отворен, затворете го за да запазите операциите ")
                 logger.info("Prompted to close the file 2 (write_to_excel)")
-
 
         else:
             return "Saving canceled"
@@ -371,7 +371,7 @@ def select_dest_file():
 
 
 def add_to_excel():
-    write_to_mysql()
+    # write_to_mysql()
     """Adding to excel - keeping old records. """
     # write_to_database()
     
@@ -396,11 +396,11 @@ def add_to_excel():
         break
     logger.info("first empty row found ")
 
-    for i in good_list:
-        ws[("A" + str(n))] = good_list[i].name
-        ws[("B" + str(n))] = good_list[i].quantity
-        ws["C" + str(n)] = good_list[i].price
-        ws["D" + str(n)] = good_list[i].quantity*good_list[i].price
+    for i in good_dict:
+        ws[("A" + str(n))] = good_dict[i].name
+        ws[("B" + str(n))] = good_dict[i].quantity
+        ws["C" + str(n)] = good_dict[i].price
+        ws["D" + str(n)] = good_dict[i].quantity * good_dict[i].price
         n += 1
     logger.info(f"added rows and info in a loop starting row {n-1}")
     wb.close()
@@ -417,20 +417,20 @@ def add_to_excel():
         sys.exit()
 
 
-def write_to_mysql():
-    ms.my_cursor.execute("create table if not exists REVISIA ( GOOD varchar(255), QUANTITY float(9,2), PRICE float(9,2), good_total float(18,2))")
-    for good in good_list.keys():
-         val = (str(good_list[good].name), str(good_list[good].quantity),
-               str(good_list[good].price), str(good_list[good].total_price))
-         ms.my_cursor.execute(ms.sql_formula, val)
-         ms.mydb.commit()
-
-    ms.my_cursor.execute("SELECT * FROM inventory.revisia")
-    my_result = ms.my_cursor.fetchall()
-    for i in my_result:
-        print(i)
-    ms.my_cursor.execute("DELETE FROM inventory.revisia")
-    ms.mydb.commit()
+# def write_to_mysql():
+#     ms.my_cursor.execute("create table if not exists REVISIA ( GOOD varchar(255), QUANTITY float(9,2), PRICE float(9,2), good_total float(18,2))")
+#     for good in good_list.keys():
+#          val = (str(good_list[good].name), str(good_list[good].quantity),
+#                str(good_list[good].price), str(good_list[good].total_price))
+#          ms.my_cursor.execute(ms.sql_formula, val)
+#          ms.mydb.commit()
+#
+#     ms.my_cursor.execute("SELECT * FROM inventory.revisia")
+#     my_result = ms.my_cursor.fetchall()
+#     for i in my_result:
+#         print(i)
+#     ms.my_cursor.execute("DELETE FROM inventory.revisia")
+#     ms.mydb.commit()
 
 
 
