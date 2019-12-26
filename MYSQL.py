@@ -1,3 +1,4 @@
+
 import mysql.connector
 
 mydb = mysql.connector.connect(
@@ -10,9 +11,3 @@ mydb = mysql.connector.connect(
 my_cursor = mydb.cursor()
 
 sql_formula = "INSERT INTO revisia (goods, quantity, price, good_total) VALUES (%s, %s, %s, %s)"
-
-
-
-
-
-
