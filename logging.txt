@@ -1,8 +1,82 @@
-INFO 2019-12-24 09:18:25,975 - created the labels and entries
-INFO 2019-12-24 09:18:25,977 - created the buttons
-INFO 2019-12-24 09:18:25,979 - created the space lables and images 
-INFO 2019-12-24 09:18:25,979 - initial focus set
-INFO 2019-12-24 09:18:25,980 - Bound enter and arrows to root actions
-INFO 2019-12-24 09:18:26,024 - GUI is ready to loop
-INFO 2019-12-24 09:18:32,494 - Selecting destination file(select_dest_file)
-INFO 2019-12-24 09:18:39,211 - If no data is on screen and no goods are created exits
+INFO 2019-12-26 09:23:25,369 - created the labels and entries
+INFO 2019-12-26 09:23:25,371 - created the buttons
+INFO 2019-12-26 09:23:25,372 - created the space labels and images 
+INFO 2019-12-26 09:23:25,372 - initial focus set
+INFO 2019-12-26 09:23:25,373 - Bound enter and arrows to root actions
+INFO 2019-12-26 09:23:25,398 - GUI is ready to loop
+INFO 2019-12-26 09:23:25,403 - Adding accumulated quantity(add_quantity)
+INFO 2019-12-26 09:23:25,403 - checked a
+INFO 2019-12-26 09:23:25,403 - creating same good, found in a different place as non accumulating option is selected(add_quantity)
+INFO 2019-12-26 09:23:25,406 - checking No name
+INFO 2019-12-26 09:23:25,406 - checking No name1
+INFO 2019-12-26 09:23:25,411 - Unsaved data found on the screen (check_on_screen)
+INFO 2019-12-26 09:23:25,412 - Saving to file selected (check_on_screen)
+INFO 2019-12-26 09:23:25,412 - Data is valid and good is entered (check_on_screen)
+INFO 2019-12-26 09:23:25,412 - Unsaved data found on the screen (check_on_screen)
+INFO 2019-12-26 09:23:25,415 - starting close with button (close_with_button)
+INFO 2019-12-26 09:23:25,415 - starting close with button (close_with_button)
+INFO 2019-12-26 09:23:25,416 - Saving onscreen rejected(close_with_button)
+INFO 2019-12-26 09:23:25,416 - starting close with button (close_with_button)
+INFO 2019-12-26 09:23:25,416 - Quantity and price fields contain info (enter_good)
+INFO 2019-12-26 09:23:25,417 - Checking for name entry  (create_good)
+INFO 2019-12-26 09:23:25,417 - Checking if name exist  (create_good)
+INFO 2019-12-26 09:23:25,420 - Good created and name added to list(create_good)
+INFO 2019-12-26 09:23:25,420 - Entry box .!entry cleaned (create_good)
+INFO 2019-12-26 09:23:25,420 - Entry box .!entry2 cleaned (create_good)
+INFO 2019-12-26 09:23:25,420 - Entry box .!entry3 cleaned (create_good)
+INFO 2019-12-26 09:23:25,420 - Good entered successfully(enter_good)
+INFO 2019-12-26 09:23:25,420 - Saving onscreen entered(close_with_button)
+INFO 2019-12-26 09:23:25,422 - If no data is on screen and no goods are created exits
+INFO 2019-12-26 09:23:25,423 - Quantity and price fields contain info (enter_good)
+INFO 2019-12-26 09:23:25,423 - Checking for name entry  (create_good)
+INFO 2019-12-26 09:23:25,423 - Checking if name exist  (create_good)
+INFO 2019-12-26 09:23:25,423 - Good created and name added to list(create_good)
+INFO 2019-12-26 09:23:25,423 - Entry box .!entry cleaned (create_good)
+INFO 2019-12-26 09:23:25,423 - Entry box .!entry2 cleaned (create_good)
+INFO 2019-12-26 09:23:25,423 - Entry box .!entry3 cleaned (create_good)
+INFO 2019-12-26 09:23:25,423 - Good entered successfully(enter_good)
+INFO 2019-12-26 09:23:25,423 - Exiting data exported to excel(close_with_x)
+INFO 2019-12-26 09:23:25,423 - No onscreen entry but goods in the list (close_with_x)
+INFO 2019-12-26 09:23:25,426 - Checking for name entry  (create_good)
+INFO 2019-12-26 09:23:25,426 - Checking if name exist  (create_good)
+INFO 2019-12-26 09:23:25,426 - Good created and name added to list(create_good)
+INFO 2019-12-26 09:23:25,426 - Entry box .!entry cleaned (create_good)
+INFO 2019-12-26 09:23:25,426 - Entry box .!entry2 cleaned (create_good)
+INFO 2019-12-26 09:23:25,426 - Entry box .!entry3 cleaned (create_good)
+INFO 2019-12-26 09:23:25,426 - Checking for name entry  (create_good)
+INFO 2019-12-26 09:23:25,426 - creating same good, found in a different place as non accumulating option is selected(add_quantity)
+INFO 2019-12-26 09:23:25,427 - Quantity added for existing good  (create_good)
+INFO 2019-12-26 09:23:25,427 - Entry box .!entry cleaned (create_good)
+INFO 2019-12-26 09:23:25,427 - Entry box .!entry2 cleaned (create_good)
+INFO 2019-12-26 09:23:25,427 - Entry box .!entry3 cleaned (create_good)
+INFO 2019-12-26 09:23:25,427 - Good 'No Name good' created and name added to list (create_good)
+INFO 2019-12-26 09:23:25,427 - Entry box .!entry cleaned (create_good)
+INFO 2019-12-26 09:23:25,427 - Entry box .!entry2 cleaned (create_good)
+INFO 2019-12-26 09:23:25,427 - Entry box .!entry3 cleaned (create_good)
+INFO 2019-12-26 09:23:25,430 - Quantity and price fields contain info (enter_good)
+INFO 2019-12-26 09:23:25,430 - Entry of good failed as the numbers are not valid(enter_good)
+INFO 2019-12-26 09:23:25,431 - Quantity and price fields contain info (enter_good)
+INFO 2019-12-26 09:23:25,431 - Good entered successfully(enter_good)
+INFO 2019-12-26 09:23:25,434 - highlights the incorrect entry(highlight_wrong)
+INFO 2019-12-26 09:23:25,434 - highlights the incorrect entry(highlight_wrong)
+INFO 2019-12-26 09:23:25,438 - moves to next entries (on_return_entries
+INFO 2019-12-26 09:23:25,438 - current row of the active entry found (on_return_entries
+INFO 2019-12-26 09:23:25,438 - moved to next entries (on_return_entries
+INFO 2019-12-26 09:23:25,438 - moves to next entries (on_return_entries
+INFO 2019-12-26 09:23:25,438 - current row of the active entry found (on_return_entries
+INFO 2019-12-26 09:23:25,438 - moved to next entries (on_return_entries
+INFO 2019-12-26 09:23:25,438 - moves to next entries (on_return_entries
+INFO 2019-12-26 09:23:25,438 - current row of the active entry found (on_return_entries
+INFO 2019-12-26 09:23:25,439 - moved to first entries and entered the goods(*if valid numbers), (on_return_entries)
+INFO 2019-12-26 09:23:25,445 - Selecting the output file new or existing (write_or_add)
+INFO 2019-12-26 09:23:25,445 - Writing the data to excel before closing with button (write_or_add)
+INFO 2019-12-26 09:23:25,445 - Selecting the output file new or existing (write_or_add)
+INFO 2019-12-26 09:23:25,446 - Adding the data to excel before closing with button(write_or_add)
+INFO 2019-12-26 09:23:25,448 - fetched coordinates of the event widget (arrow_moves)
+INFO 2019-12-26 09:23:25,448 - moved up  as it is not the bottom row(arrow_moves)
+INFO 2019-12-26 09:23:25,449 - fetched coordinates of the event widget (arrow_moves)
+INFO 2019-12-26 09:23:25,449 - moved up  as it is not the top row(arrow_moves)
+INFO 2019-12-26 09:23:25,450 - fetched coordinates of the event widget (arrow_moves)
+INFO 2019-12-26 09:23:25,450 - moved to Right as it is not the last column(arrow_moves)
+INFO 2019-12-26 09:23:25,452 - fetched coordinates of the event widget (arrow_moves)
+INFO 2019-12-26 09:23:25,452 - fetched coordinates of the event widget (arrow_moves)
