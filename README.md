@@ -10,7 +10,7 @@
 * [Setup](#setup)
 * [Features](#features)
 * [Status](#status)
-* [Manual with screenshots](#inspiration)
+* [Manual with screenshots](#https://github.com/jmishev/python_inventory/blob/master/Manual%20.docx)
 * [Contact](#contact)
 
 ## General info
