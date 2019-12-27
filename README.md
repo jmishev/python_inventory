@@ -7,12 +7,13 @@
 * [General info](#general-info)
 * [Screenshots](#screenshots)
 * [Technologies](#technologies)
+<!--- 
 * [Setup](#setup)
 * [Features](#features)
 * [Status](#status)
 * [Manual with screenshots](#https://github.com/jmishev/python_inventory/blob/master/Manual%20.docx)
 * [Contact](#contact)
-
+-->
 ## General info
 
 Project is started on request of a friend of mine that a bakery shop. He was annoyed by the complexity 
@@ -30,8 +31,7 @@ extracting the results in excel.
 * onepyxl 3.0.2
 
 
-## Setup
-Describe how to install / setup your local environement / add link to demo version.
+<!--- 
 
 ## Code Examples
 Show examples of usage:
@@ -55,3 +55,5 @@ Add here credits. Project inspired by..., based on...
 
 ## Contact
 Created by [@flynerdpl](https://www.flynerd.pl/) - feel free to contact me!
+
+-->
