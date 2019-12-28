@@ -16,7 +16,7 @@
 -->
 ## General info
 
-Project is started on request of a friend of mine that a bakery shop. He was annoyed by the complexity 
+Project is started on request of a friend of mine that runs a bakery shop. He was annoyed by the complexity 
 and inefficiency of the existing tools/applications in Bulgarian
 This is the simplest version of revision using built in collections and 
 extracting the results in excel. 
